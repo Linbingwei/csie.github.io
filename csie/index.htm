@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/css5.css"/>
+<link rel="stylesheet" type="text/css" href="css/css3.css"/>
+<script type="text/javascript" src="js/myimg.js"></script>
+
+</head>
+<body onload="playimg();">
+<div id="banner"style="text-align: center;">
+
+<div id="mydiv"></div>
+<span style="font-size:200%;">
+<center><div id="nextpic"><a href="#00" class="previous round">&#8249;</a></div></center>
+<center><div id="lastpic"><a href="#00" class="next round">&#8250;</a></div></center>
+</span>
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.round {
+  border-radius: 100%;
+}
+</style>
+<!--
+<center><div id="nextpic"><img src="images/06.png"></div></center>      
+<center><div id="lastpic"><img src="images/07.png"></div></center> 
+-->
+
+</div>   
+<script>
+document.getElementById("nextpic").onclick = function() {npFunction()}; 
+document.getElementById("lastpic").onclick = function() {lpFunction()}; 
+</script>
+<!--
+<div id="top">
+	<ul id="menu" >
+		<span id="span1">
+			<a href="form.htm">會員申請</a>
+			<a href="formVote.htm">投票</a>
+			<a href="query_gb.php">會員查詢</a>
+			<a href="query_vote.php">投票查詢</a>			
+			<a href="send_mail.html">寄送郵件</a>
+			<a href="id_card_exam.html">驗證身分證</a>
+		</span>
+	</ul>
+</div>
+-->
+<div id="top">
+	<ul id="menu">
+		<li class="dropdown">
+			<a href="index.htm" class="dropbtn">資工一乙林秉緯的首頁</a>
+			<div class="dropdown-content">
+				<a href="https://www.instagram.com/linbingwei0103/?hl=zh-tw">About</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+			<li><a href="form.htm">會員申請</a><li>
+			<li><a href="formVote.htm">投票</a></li>		
+			<li><a href="query_gb.php">會員查詢</a></li>
+			<li><a href="query_vote.php">投票查詢</a></li>		
+			<li><a href="send_mail.html">寄送郵件</a></li>
+			<li><a href="id_card_exam.html">驗證身分證</a></li>
+	</ul>
+</div>
+
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WFw0Y9X90Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+<video width="560" height="315" controls autoplay muted loop>
+	<source src="mp4/1.mp4" type="video/mp4">
+</video>
+
+</center>	
+</body>
+</html>

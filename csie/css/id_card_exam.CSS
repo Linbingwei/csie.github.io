@@ -1,0 +1,36 @@
+        function validateForm(form){
+            if (!verifyId(form.id.value)){
+                alert("身分證資料有誤，不對喔\n為無效身分證");
+                return(false);	
+            }
+            alert("歡迎!!身分證資料正確，送出！\n有效身分證");
+            form.submit();
+            return(true);
+        }
+        
+        function verifyId(id) {
+            id = id.trim();
+            verification = id.match("^[A-Z][12]\\d{8}$")
+            if(!verification){
+                return false
+            }
+
+            let conver = "ABCDEFGHJKLMNPQRSTUVXYWZIO"
+            let weights = [1, 9, 8, 7, 6, 5, 4, 3, 2, 1, 1]
+
+            id = String(conver.indexOf(id[0]) + 10) + id.slice(1);
+
+            checkSum = 0
+            for (let i = 0; i < id.length; i++) {
+                c = parseInt(id[i])
+                w = weights[i]
+                checkSum += c * w
+            }
+            
+            return checkSum % 10 == 0
+        }
+
+
+
+
+
